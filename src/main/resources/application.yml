@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    # \u4F7F\u7528druid\u8FDE\u63A5\u6C60
+    type: com.alibaba.druid.pool.DruidDataSource
+    # \u6570\u636E\u6E90\u914D\u7F6E
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/abc?useUnicode=true&IntegerEncoding=utf8&useSSL=false&servertimeZone=Asia/Shanghai
+      username: root
+      password: root
+
+mybatis-plus:
+  configuration:
+    # \u5F00\u542F\u9A7C\u5CF0\u547D\u540D\u89C4\u5219\uFF0C\u9ED8\u8BA4true\u5F00\u542F
+    map-underscore-to-camel-case: true
+    # \u63A7\u5236\u53F0\u65E5\u5FD7\u6253\u5370\uFF0C\u4FBF\u4E8E\u67E5\u770BSQL
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
